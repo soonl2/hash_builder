@@ -651,7 +651,6 @@ mod tests {
         hb.root();
         let (_, updates) = hb.split();
         // according to the data graph, there's should be 6 branch nodes to be updated.
-        println!("updates: {:#?}", updates);
         assert_eq!(updates.len(), 6);
     }
 }
